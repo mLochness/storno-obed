@@ -1,15 +1,15 @@
-import BlogList from "./BlogList";
+import KidsList from "./KidsList";
 import useFetch from "./useFetch";
 
 const Home = () => {
-    const { data: blogs, isPending, error} = useFetch('http://localhost:3200/blogs');
+    const { data: kids, isPending, error} = useFetch('http://localhost:3200/kids');
 // npm install react-router-dom
 // npx json-server --watch data/db.json --port 3200
      return (
         <div className="home">
             { error && <div>{ error }</div>}
-            {isPending && <div>Loading...</div>}
-            {blogs && <BlogList blogs={ blogs } title="ODHLÁSENÍ:"/>}
+            {isPending && <div>Načítavam...</div>}
+            {kids && <KidsList kids={ kids } title="Detičky:"/>}
         </div>
     );
 }

@@ -28,6 +28,11 @@ h1 {
   margin-bottom: 30px;
 }
 
+h4 {
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
 .navbar .links {
   margin-left: auto;
 }
