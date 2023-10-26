@@ -27,30 +27,20 @@ const Login = () => {
     }
 
     return (
-        <div className="create">
-            <h2>Create a new blog</h2>
+        <div className="login">
+            <h2>Prihlásenie</h2>
             <form onSubmit={handleSubmit}>
-                <label>Blog title</label>
-                <input 
-                type="text" 
-                required 
+                <label>Email</label>
+                <input type="text" required 
                 value={title}
                 onChange={(e) => setTitle(e.target.value)} 
                 />
-                <label>Blog body</label>
-                <textarea required 
+                <label>Heslo</label>
+                <input required 
                 value={body}
                 onChange={(e) => setBody(e.target.value)} />
-                <label>Blog author</label>
-                <select
-                value={author}
-                onChange={(e) => setAuthor(e.target.value)}>
-                    <option value="mario">mario</option>
-                    <option value="luigi">luigi</option>
-                    <option value="kakatz">kakatz</option>
-                </select>
-                { !isPending && <button>Add blog</button> }
-                { isPending && <button disabled>Adding blog...</button> }
+                { !isPending && <button>Prihlásiť</button> }
+                { isPending && <button disabled>Prihlasujem...</button> }
             </form>
         </div>
     );

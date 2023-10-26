@@ -1,16 +1,15 @@
 import { Link } from "react-router-dom";
 
 const KidsList = ({ kids, title }) => {
-  //  const Offdates = kids.offdates.map(offdate => { offdate.offdates });
 
     return (
-        <div className="blog-list">
+        <div className="kids-list">
             <h4>{title}</h4>
             {kids.map((kid) => (
-                <div className="blog-preview" key={kid.id}>
-                    <Link to={`/blogs/${kid.id}`}>
+                <div className="item-preview" key={kid.id}>
+                    <Link to={`/kids/${kid.id}`}>
                         <h3>{kid.title}</h3>
-                        <p> Odhlásenie: {kid.offdates} </p>
+                        {<p> Posledné odhlásenie: {kid.offdates.at(-1)} </p>}
                     </Link>
                 </div>
             ))}

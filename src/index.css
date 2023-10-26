@@ -74,18 +74,59 @@ button {
   background-color: #b9b9b9;
 }
 
-.blog-preview {
+.item-preview {
   margin-bottom: 20px;
   padding: 15px 20px;
   background-color: #f2f2f2;
   border-radius: 9px;
   transition: all 0.3s ease;
 }
-.blog-preview:hover {
+.item-preview:hover {
   background-color: #ffffff;
   box-shadow: 0 0 5px rgba(0,0,0,0.2);
 }
-.create label {
+.item-preview a {
+  text-decoration: none;
+}
+.login label {
+  width: 100%;
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+.login input, .login textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.login textarea {
+  max-width: 100%;
+  min-height: 150px;
+}
+.login select {
+  padding: 10px;
+  min-width: 300px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+.login button {
+  background-color: var(--themeMainColor);
+  border: 1px solid var(--themeMainColor);
+  color: #fff;
+  float: right;
+}
+.login button:hover {
+  background-color: var(--themeSecondaryColor);
+  border: 1px solid var(--themeMainColor);
+  color: var(--themeMainColor);
+}
+/* .create label {
   width: 100%;
   display: block;
   margin-bottom: 5px;
@@ -122,7 +163,7 @@ button {
   background-color: var(--themeSecondaryColor);
   border: 1px solid var(--themeMainColor);
   color: var(--themeMainColor);
-}
+} */
 .blog-details article div {
   padding: calc(20px + 0.5vw) 0;
   border-top: 2px dotted var(--themeSecondaryColor);
