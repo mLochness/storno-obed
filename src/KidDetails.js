@@ -20,9 +20,9 @@ const KidDetails = () => {
             { error && <div>{ error }</div>}
             { kid && (
                 <article>
-                    <h2>{ kid.title }</h2>
-                    <p>Written by { kid.author }</p>
-                    <div>{ kid.body }</div>
+                    <h2>{ kid.name }</h2>
+                    <p>mail: { kid.email }</p>
+                    <div>pass: { kid.pass }</div>
                     <button onClick={handleClick}>Delete</button>
                 </article>
             )}

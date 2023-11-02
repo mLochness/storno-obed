@@ -8,7 +8,7 @@ const KidsList = ({ kids, title }) => {
             {kids.map((kid) => (
                 <div className="item-preview" key={kid.id}>
                     <Link to={`/kids/${kid.id}`}>
-                        <h3>{kid.title}</h3>
+                        <h3>{kid.name}</h3>
                         {<p> Posledné odhlásenie: {kid.offdates.at(-1)} </p>}
                     </Link>
                 </div>
